@@ -6,7 +6,7 @@ class BaseModel {
     this.headers = {};
 
     if (oauthToken) {
-      this.headers.Authorization = `Bearer ${oauthToken}`;
+      this.headers.authorization = `Bearer ${oauthToken}`;
     } else if (token) {
       this.headers['private-token'] = token;
     } else {
