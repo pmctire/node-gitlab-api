@@ -6,7 +6,7 @@ import { Bundler } from './infrastructure';
 export * from './services';
 
 // Groups
-export const GroupsBundle = Bundler(Pick(APIServices, [
+export const GroupsBundler = Bundler(Pick(APIServices, [
   'Groups',
   'GroupAccessRequests',
   'GroupBadges',
@@ -23,7 +23,7 @@ export const GroupsBundle = Bundler(Pick(APIServices, [
 ]));
 
 // Users
-export const UsersBundle = Bundler(Pick(APIServices, [
+export const UsersBundler = Bundler(Pick(APIServices, [
   'Users',
   'UserCustomAttributes',
   'UserEmails',
@@ -33,7 +33,7 @@ export const UsersBundle = Bundler(Pick(APIServices, [
 ]));
 
 // Projects
-export const ProjectsBundle = Bundler(Pick(APIServices, [
+export const ProjectsBundler = Bundler(Pick(APIServices, [
   'Branches',
   'Commits',
   'DeployKeys',
@@ -49,7 +49,6 @@ export const ProjectsBundle = Bundler(Pick(APIServices, [
   'MergeRequestAwardEmojis',
   'MergeRequestNotes',
   'Pipelines',
-  'PipelineJobs',
   'PipelineSchedules',
   'PipelineScheduleVariables',
   'Projects',

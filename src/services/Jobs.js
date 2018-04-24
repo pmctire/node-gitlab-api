@@ -6,12 +6,6 @@ class Jobs extends BaseService {
 
     return RequestHelper.get(this, `projects/${pId}/jobs`, options);
   }
-
-  downloadSingleArtifactFile(projectId, jobId, artifactPath) {
-    const pId = encodeURIComponent(projectId);
-
-    return RequestHelper.get(this, `projects/${pId}/jobs/${jobId}/artifacts/${artifactPath}`);
-  }
 }
 
 export default Jobs;
